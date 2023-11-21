@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
               // append name, value and expirationDate to list
               listItem.textContent = "Name: " + cookie.name + ", Value: " + cookie.value;
               if (cookie.expirationDate) {
-                listItem.textContent += "Expiration Date: " + new Date(cookie.expirationDate * 1000);
+                listItem.textContent += ", Expiration Date: " + new Date(cookie.expirationDate * 1000);
               }
               cookieList.appendChild(listItem);
           });
